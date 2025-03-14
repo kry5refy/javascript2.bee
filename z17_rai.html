@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - Pytania i Odpowiedzi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .question {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .answer {
+            margin-left: 20px;
+        }
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.write('<div class="question">1. Wymień cztery sposoby wyprowadzania danych w JS</div>');
+        document.write('<div class="answer"><b>document.write(), alert(), do okienek formularza, do tabeli</b></div>');
+        
+        document.write('<div class="question">2. Czym jest funkcja w JS? Omów przy użyciu 4 podpunktów.</div>');
+        document.write('<div class="answer"><ul>' +
+            '<li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy.</li>' +
+            '<li>Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod.</li>' +
+            '<li>Funkcja może mieć argumenty, które są przetwarzane wewnątrz, np. <code>suma_kry(a, b)</code>.</li>' +
+            '<li>Może (nie zawsze) zwrócić obliczoną wartość za pomocą <code>return</code>.</li>' +
+            '</ul></div>');
+        
+        document.write('<div class="question">3. Omów metody <code>getElementsByName</code>, <code>getElementById</code>, <code>getElementsByTagName</code>.</div>');
+        document.write('<div class="answer"><ul>' +
+            '<li><b>getElementById(id)</b> – dostęp do elementu o konkretnej wartości atrybutu <code>id</code>.</li>' +
+            '<li><b>getElementsByTagName(znacznik)</b> – dostęp do wszystkich elementów danego typu, np. <code>P</code> lub <code>DIV</code>.</li>' +
+            '<li><b>getElementsByName(nazwa)</b> – dostęp do wszystkich elementów o konkretnej wartości atrybutu <code>name</code>.</li>' +
+            '</ul></div>');
+        
+        document.write('<div class="question">4. Omów właściwości <code>innerHTML</code>, <code>innerText</code>, <code>className</code>.</div>');
+        document.write('<div class="answer"><ul>' +
+            '<li><b>innerHTML</b> – umożliwia odczyt, modyfikację, wstawienie lub usunięcie kodu HTML w danym elemencie.</li>' +
+            '<li><b>innerText</b> – określa ciąg znaków, który zostanie umieszczony w elemencie.</li>' +
+            '<li><b>className</b> – umożliwia przypisanie klasy CSS do elementu.</li>' +
+            '</ul></div>');
+    </script>
+</body>
+</html>
